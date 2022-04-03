@@ -37,6 +37,6 @@ jobs:
 
     - name: Push Result
       run: |
-        git add output.png
+        git add output.png china_place_template.png
         git commit -am "[bot] generate template"
         git push
