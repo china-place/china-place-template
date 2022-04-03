@@ -21,7 +21,7 @@ if (window.top !== window.self) {
             i.src =
               'https://raw.githubusercontent.com/china-place/china-place-template/main/china_place_template.png';
             i.style =
-              'position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 1000px;height: 1000px;';
+              'position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;';
             return i;
           })()
         );
