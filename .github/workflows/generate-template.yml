@@ -2,9 +2,6 @@ name: Generate Template
 
 on: workflow_dispatch
 
-permissions:
-  contents: read
-
 jobs:
   build:
 
@@ -12,6 +9,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
+    - name: Set up git
+      run: |
+        git config --global user.name 'china-place-bot'
+        git config --global user.email 'china-place@users.noreply.github.com'
 
     - name: Set up Python
       uses: actions/setup-python@v3
@@ -32,3 +34,9 @@ jobs:
       with:
         name: template
         path: "./output.png"
+
+    - name: Push Result
+      run: |
+        git add output.png
+        git commit -am "[bot] generate template"
+        git push
