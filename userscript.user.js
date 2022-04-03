@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         china_place combo
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  Spread the love
-// @author       oralekin
+// @version      0.2
+// @description  Userscript for r/china_place
+// @author       china-place
+// @updateURL    https://github.com/china-place/china-place-template/raw/main/userscript.user.js
+// @downloadURL  https://github.com/china-place/china-place-template/raw/main/userscript.user.js
 // @match        https://hot-potato.reddit.com/embed*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=reddit.com
 // @grant        none
