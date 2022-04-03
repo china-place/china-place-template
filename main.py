@@ -48,6 +48,7 @@ def main():
         img.write(container)
 
     container.save("output.png")
+    container.save("china_place_template.png")
 
 
 def findAvailableImages() -> List[PixelImage]:
