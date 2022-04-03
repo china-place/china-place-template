@@ -5,7 +5,7 @@ from typing import List, Tuple
 from os import walk
 
 CONTAINER_SIZE_X = 6000
-CONTAINER_SIZE_Y = 3000
+CONTAINER_SIZE_Y = 6000
 CONTAINER_DEFAULT_COLOR = (0, 0, 0, 0)
 
 PIXEL_GROUP_SIZE = 3
