@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         china_place combo
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Userscript for r/china_place
 // @author       china-place
 // @updateURL    https://github.com/china-place/china-place-template/raw/main/userscript.user.js
@@ -21,7 +21,7 @@ if (window.top !== window.self) {
           (() => {
             const i = document.createElement('img');
             i.src =
-              'https://raw.githubusercontent.com/china-place/china-place-template/main/china_place_template.png';
+              'https://raw.githubusercontent.com/china-place/china-place-template/main/output.png';
             i.style =
               'position: absolute;left: 0;top: 0;image-rendering: pixelated;width: 2000px;height: 1000px;';
             return i;
