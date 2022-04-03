@@ -22,7 +22,6 @@ class PixelImage:
 
     def __init__(self):
         self.data = []
-        # TODO
         self.startX = 0
         self.startY = 0
 
@@ -39,7 +38,6 @@ class PixelImage:
 
 
 def main():
-    # test
     container = Image.new("RGBA", (CONTAINER_SIZE_X, CONTAINER_SIZE_Y), CONTAINER_DEFAULT_COLOR)
 
     images = findAvailableImages()
