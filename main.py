@@ -16,7 +16,7 @@ COORD_MATCHER = re.compile(r"\(([0-9]+)\,([0-9]+)\)\.png$")
 
 
 class PixelImage:
-    data: List[List[Tuple[int, int, int]]]
+    data: List[List[Tuple[int, int, int, int]]]
     startX: int
     startY: int
 
@@ -34,7 +34,7 @@ class PixelImage:
                 pixel = self.data[w][h]
                 drawX = self.startX + w * PIXEL_GROUP_SIZE + 1
                 drawY = self.startY + h * PIXEL_GROUP_SIZE + 1
-                image.putpixel((drawX, drawY), (pixel[0], pixel[1], pixel[2], 255))
+                image.putpixel((drawX, drawY), pixel)
 
 
 def main():
@@ -80,7 +80,7 @@ def createImage(path: str) -> PixelImage:
         result.data.append(row)
         for h in range(0, maxHeight):
             value = im.getpixel((w, h))
-            row.append((value[0], value[1], value[2]))
+            row.append(value)
     return result
 
 
