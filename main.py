@@ -70,6 +70,7 @@ def findAvailableImages() -> List[PixelImage]:
 
 
 def createImage(path: str) -> PixelImage:
+    print(f"Creating image from {path}")
     im = Image.open(path)
     maxWidth, maxHeight = im.size
 
